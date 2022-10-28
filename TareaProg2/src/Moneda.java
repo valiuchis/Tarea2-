@@ -7,45 +7,64 @@ abstract class Moneda {
         super ();
     }
     
-    public int getValor () {
-        return valor;
-    }
+    public abstract int getValor ();//es abstract creo...
+      //  return valor; aqui en esta clase no se hace return de nada
+    
+    public abstract String toString();//imprimir info de moneda
 }
 
-class monedaCien extends Moneda {
-    
-    public monedaCien () {
+public class MonedaCien extends Moneda {
+    //habra que hacer override en cada metodo??, creo que si
+    @Override
+    public MonedaCien () {
         super ();
         valor = 100;
     }
-    
+    //creo que aqui si va override, trata de probarlo valeria
+    @Override
     public int getValor () {
         return valor;
     }
+    @Override    
+     public String toString(){
+        return "Cancela con :"+ getValor();//print mensaje de info
+     }
+
 }
 
-class monedaQuinientos extends Moneda {
+class MonedaQuinientos extends Moneda {
     
-    public monedaQuinientos () {
+    @Override
+    public MonedaQuinientos () {
         super ();
         valor = 500;
     }
-    
+    @Override
     public int getValor () {
         return valor;
+    }
+    @Override    
+     public String toString(){
+        return "Cancela con :"+getValor();//print mensaje de info
     }
 }
 
-class monedaMil extends Moneda {
-    
-    public monedaMil () {
+class MonedaMil extends Moneda {
+
+    @Override
+    public MonedaMil () {
         super ();
         valor = 1000;
     }
-    
+    @Override
     public int getValor () {
         return valor;
     }
+    @Override
+    public String toString(){
+    return "Cancela con: "+getValor();    
+    }
 }
+//Se hace moneda de 1500 o no?? 
 
 
