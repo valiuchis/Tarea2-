@@ -13,14 +13,13 @@ abstract class Moneda {
     public abstract String toString();//imprimir info de moneda
 }
 
-public class MonedaCien extends Moneda {
+class MonedaCien extends Moneda {
     //habra que hacer override en cada metodo??, creo que si
-    @Override
     public MonedaCien () {
         super ();
         valor = 100;
     }
-    //creo que aqui si va override, trata de probarlo valeria
+    //creo que aqui si va override, trata de probarlo valeria / :)
     @Override
     public int getValor () {
         return valor;
@@ -34,7 +33,6 @@ public class MonedaCien extends Moneda {
 
 class MonedaQuinientos extends Moneda {
     
-    @Override
     public MonedaQuinientos () {
         super ();
         valor = 500;
@@ -51,7 +49,6 @@ class MonedaQuinientos extends Moneda {
 
 class MonedaMil extends Moneda {
 
-    @Override
     public MonedaMil () {
         super ();
         valor = 1000;
