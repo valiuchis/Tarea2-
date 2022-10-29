@@ -1,5 +1,5 @@
 
-abstract class Bebida{
+public abstract class Bebida{
 
     private int Serie;
 
