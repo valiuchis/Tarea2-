@@ -22,12 +22,12 @@ public class DepositoBebidas {
         }
     }
     
-    public int cantidadBebida () {
+   /* public int cantidadBebida () {
             
             return bodega.size();
-        }
+        }*/
 ///tambien la podriamos hacer tipo booleana valeria...
-/*
+
     public Boolean cantidadBebida(){
     
         if(bodega.size() != 0){
@@ -36,7 +36,7 @@ public class DepositoBebidas {
             return false;
         }    
     }
-*/
+
 }
     
     
