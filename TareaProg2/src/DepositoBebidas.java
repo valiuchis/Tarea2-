@@ -15,10 +15,10 @@ public class DepositoBebidas {
     
     public Bebida getBebida () {
         
-        if (bodega.size() <= 0) {
-            return null; 
-        } else {
+        if (bodega.size() != 0) {
             return bodega.remove(0);
+        } else {
+            return null; 
         }
     }
     
@@ -26,6 +26,17 @@ public class DepositoBebidas {
             
             return bodega.size();
         }
+///tambien la podriamos hacer tipo booleana valeria...
+/*
+    public Boolean cantidadBebida(){
+    
+        if(bodega.size() != 0){
+            return true;    
+        }else{
+            return false;
+        }    
+    }
+*/
 }
     
     
