@@ -9,7 +9,6 @@ public class Expendedora {
     private DepositoBebidas Fanta;
    
     private int cantidadPagar;
-    private Moneda moneda;
     private DepositoMoneda CajaRegistradora;
     private int vuelto;
     
@@ -34,7 +33,6 @@ public class Expendedora {
     public Bebida ventaBebida (Moneda coin, int codigoID) throws NoHayBebidaException, PagoIncorrectoException, PagoInsuficienteException {
         
         cantidadPagar = coin.getValor();
-        moneda = coin;
         
         if (coin.getValor() >= precioBebidas) {
             
