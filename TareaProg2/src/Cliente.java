@@ -8,12 +8,12 @@ package tarea2;
  */
 public class Cliente{
 
-    //Al crear el cliente, comprará la bebida con los datos que se le indiquen.
+    
     public Cliente(Pago pago, int bebida, Expendedor expToUse){
         expToUse.comprarBebida(pago, Soda);
     }
 
-    //creamos un metodo pa comprar bebida
+    //creamos un metodo pa comprar bebida,no se si sirvio mucho en realidad ajaja
     
     public void Transaccion(Moneda moneda, int bebida,Expendedor expToUse){
         expToUse.comprarBebida(moneda, bebida);
