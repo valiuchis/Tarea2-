@@ -1,5 +1,5 @@
 
-abstract class Moneda {
+public abstract class Moneda {
     
     public int valor;
     
