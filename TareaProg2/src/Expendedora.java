@@ -94,6 +94,11 @@ public class Expendedora {
     }
     
     public Moneda vueltoFinal () {
-        return CajaRegistradora.getMoneda();
+        if (vuelto == 0) {
+            return null;
+        } else {
+            return CajaRegistradora.getMoneda();
+        }
+        
     }
 }
