@@ -16,14 +16,14 @@ public class DepositoMoneda {
     
     public Moneda getMoneda () {
         
-        if (deposito.size() <= 0) {
-            return null;
-        } else {
+        if (deposito.size() != 0) {
             return deposito.remove(0);
+        } else {
+            return null;
         }
     }
     
-    public int tamaño () {
+    public int tamaño () {//ver para que ocuparemos este metodo
         
         return deposito.size();
     }
